@@ -88,6 +88,7 @@ img {
 .contact-list {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 .nav-link {
   font-weight: 500;
@@ -106,10 +107,31 @@ img {
   color: var(--text-color);
   text-decoration: none;
 
-  display: inline-block;
+  display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.contact-list .item {
+  display: inline-flex;
+  align-items: center;
+}
+.contact-list .item::before {
+  display: inline-flex;
+  content: '';
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+.contact-list .item:nth-child(1):before {
+  background-image: url(../images/envelope.svg);
+}
+.contact-list .item:nth-child(2):before {
+  background-image: url(../images/smartphone.svg);
+}
+
 .nav-link:hover,
 .nav-link:focus,
 .contact-link:hover,
@@ -122,8 +144,18 @@ img {
 .hero {
   background-color: var(--bgd-dark);
   text-align: center;
+}
+.hero-body {
   padding-top: 200px;
   padding-bottom: 200px;
+  margin: 0 auto;
+  min-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 .hero-title {
   font-weight: 900;
