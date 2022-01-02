@@ -210,10 +210,13 @@ img {
 }
 .features-list {
   display: flex;
-  justify-content: space-between;
 }
 .features-list .item {
-  width: 270px;
+  width: calc((100% -90px) / 4);
+  margin-right: 30px;
+}
+.features-list .item:last-child {
+  margin-right: 0;
 }
 .sub-title {
   font-weight: 700;
