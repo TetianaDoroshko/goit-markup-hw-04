@@ -108,28 +108,14 @@ img {
   text-decoration: none;
 
   display: inline-flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+  background-color: aqua;
 }
 .contact-list .item {
   display: inline-flex;
   align-items: center;
-}
-.contact-list .item::before {
-  display: inline-flex;
-  content: '';
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
-}
-.contact-list .item:nth-child(1):before {
-  background-image: url(../images/envelope.svg);
-}
-.contact-list .item:nth-child(2):before {
-  background-image: url(../images/smartphone.svg);
 }
 
 .nav-link:hover,
@@ -217,6 +203,11 @@ img {
 }
 .features-list .item:last-child {
   margin-right: 0;
+}
+.antenna {
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
 }
 .sub-title {
   font-weight: 700;
