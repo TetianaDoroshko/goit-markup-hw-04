@@ -31,8 +31,13 @@ p {
 img {
   display: block;
 }
+ul {
+  padding: 0;
+  list-style: none;
+}
 .link {
   text-decoration: none;
+  display: inline-block;
 }
 .container {
   width: 1200px;
@@ -59,7 +64,6 @@ img {
   display: flex;
   align-items: center;
 }
-
 .logo {
   font-family: Raleway;
   font-weight: 700;
@@ -95,9 +99,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-color);
-  text-decoration: none;
 
-  display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -111,7 +113,6 @@ img {
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  background-color: aqua;
 }
 .contact-list .item {
   display: inline-flex;
@@ -124,6 +125,10 @@ img {
 .contact-link:focus,
 .current {
   color: var(--accent-color);
+}
+.icon-contact-link {
+  margin-right: 8px;
+  fill: currentColor;
 }
 
 /* Hero */
@@ -204,10 +209,13 @@ img {
 .features-list .item:last-child {
   margin-right: 0;
 }
-.antenna {
+.icon-feature {
   background-color: #f5f4fa;
   width: 270px;
   height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sub-title {
   font-weight: 700;
@@ -216,6 +224,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -265,7 +274,50 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 16px;
 }
+.socio-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+  margin: 0 auto;
+}
+.socio-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  fill: var(--text-color);
+}
+.socio-link:hover,
+.socio-link:focus {
+  background-color: var(--accent-color);
+  color: var(--bgd-light);
+}
+.icon-socio {
+  fill: currentColor;
+}
+
+/* Клиенты */
+
+.client-list {
+  display: flex;
+  justify-content: space-between;
+}
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
 /* Footer */
 .footer {
   color: var(--bgd-light);
