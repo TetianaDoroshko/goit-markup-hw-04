@@ -316,6 +316,14 @@ ul {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  color: var(--text-color);
+}
+.client-link:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+.icon-client {
+  fill: currentColor;
 }
 
 /* Footer */
@@ -324,6 +332,9 @@ ul {
   background-color: var(--bgd-dark);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer-body {
+  display: flex;
 }
 .address {
   margin-top: 20px;
@@ -353,7 +364,25 @@ ul {
 .footer .logo span {
   color: var(--bgd-light);
 }
+.footer-join-us {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 
+  margin-left: 70px;
+}
+.footer .socio-list {
+  margin-top: 20px;
+}
+.footer .socio-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--bgd-light);
+}
+.footer .socio-link:hover,
+.footer .socio-link:focus {
+  background-color: var(--accent-color);
+}
 /* Portfolio */
 
 .portfolio-button {
@@ -397,6 +426,11 @@ ul {
   margin-right: 30px;
   margin-bottom: 30px;
   width: 370px;
+}
+.portfolio-list .item:hover,
+.portfolio-list .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-list .item:nth-child(3n) {
   margin-right: 0;
