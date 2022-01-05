@@ -5,6 +5,7 @@
   --bgd-dark: #2f303a;
   --bgd-grey: #f5f4fa;
   --bgd-light: #ffffff;
+  --icon-color: #afb1b8;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -290,8 +291,7 @@ ul {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  color: var(--text-color);
-  fill: var(--text-color);
+  color: var(--icon-color);
 }
 .socio-link:hover,
 .socio-link:focus {
@@ -316,9 +316,10 @@ ul {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  color: var(--text-color);
+  color: var(--icon-color);
 }
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
@@ -429,8 +430,8 @@ ul {
   margin-bottom: 30px;
   width: 370px;
 }
-.portfolio-list .item:hover,
-.portfolio-list .item:focus {
+.portfolio-list .link:hover,
+.portfolio-list .link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
